@@ -14,6 +14,7 @@ public class MagicNumberTest {
         magicNumbers.setLocation("Hagfors");
         magicNumbers.setName("Sture Hagfors");
         return magicNumbers;
+    
     }
 
     @Test
