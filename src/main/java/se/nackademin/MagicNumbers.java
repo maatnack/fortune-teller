@@ -9,29 +9,98 @@ public class MagicNumbers {
     private int height;
 
     public int calculateA() {
-        //TODO: calculate A
-        return 0;
+             if(name == null || name.isEmpty())
+            return 0;
+        int count = 0;
+        for(int e = 0; e < name.length(); e++){
+            if(name.charAt(e) == ' '){
+                count++;
+                while(name.charAt(e) != ' ' && e < name.length()-1){
+                    e++;
+                }
+            }
+        }
+      
+        int  resultA=count+1+age;
+        if (resultA<=10)
+            return resultA;      
+       while(resultA>=10){
+           resultA=resultA-7;
+       }
+        return resultA;
     }
 
-    public int calculateB() {
-        //TODO: calculate B
-        return 0;
-    }
+
+   public int calculateB() {
+       if(location == null || location.isEmpty())
+            return 0;    
+       int count = 0;
+        for(int e = 0; e <= location.length()-1; e++){
+            if(location.charAt(e) != ' '){
+                count++;
+               
+            }
+        }
+       // return  count;
+       int  resultB=count+income;
+        if (resultB<=10)
+            return resultB;
+      
+         while(resultB>=10){
+           resultB=resultB-7;
+          }        
+         return resultB;    
+    }        
+
 
     public int calculateC() {
-        //TODO: calculate C
-        return 0;
-    }
+      
+         int resultC=calculateA()+calculateB();
+            resultC =resultC-height;
+            
+            while(resultC<0){ 
+                resultC= resultC+10;
+            }
+               
+              return resultC;        
+
+
+ }
 
     public int calculateD() {
-        //TODO: calculate D
-        return 0;
+           int resultD=calculateA();
+       if (resultD>5 ){
+            resultD=resultD+calculateB();
+        }
+        else if (resultD<=5 ){
+            resultD=resultD+calculateC();
+        }
+        
+        resultD=resultD-income;
+           while(resultD<0){
+            
+                resultD= resultD+10;
+           }  
+                
+     return  resultD;
     }
 
-    public int calculateE() {
-        //TODO: calculate E
-        return 0;
-    }
+        public int calculateE() {
+      int tmp=  age* income;
+      
+       tmp = tmp*income;
+        
+        tmp =tmp* height;
+        
+        double resultE = Math.sqrt(tmp);
+        while(resultE>0){
+            resultE=resultE/2;
+        }
+         
+        
+        return (int) (Math.round(resultE));
+    } 
+
 
     public void setName(String name) {
         this.name = name;
