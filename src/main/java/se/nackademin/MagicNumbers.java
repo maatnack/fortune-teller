@@ -7,7 +7,7 @@ public class MagicNumbers {
     private String location;
     private int age;
     private int height;
-
+//Ändringar
     public int calculateA() {
              if(name == null || name.isEmpty())
             return 0;
@@ -61,7 +61,8 @@ public class MagicNumbers {
             while(resultC<0){ 
                 resultC= resultC+10;
             }
-               
+            
+         
               return resultC;        
 
 
@@ -86,19 +87,27 @@ public class MagicNumbers {
     }
 
         public int calculateE() {
-      int tmp=  age* income;
-      
-       tmp = tmp*income;
-        
-        tmp =tmp* height;
-        
-        double resultE = Math.sqrt(tmp);
-        while(resultE>0){
-            resultE=resultE/2;
+        long e = age;
+
+        e *= income;
+
+        e *= income;
+
+        e *= height;
+
+        double ef = Math.sqrt(e);
+
+        while (ef >= 10) {
+
+            ef /= 2.0;
+
+            ef = Math.round(ef);
+
         }
-         
-        
-        return (int) (Math.round(resultE));
+
+        e = Math.round(ef);
+
+        return (int) e;
     } 
 
 
