@@ -125,6 +125,7 @@ public class MagicNumbers {
         this.age = age;
     }
 
+
     public void setHeight(int height) {
         this.height = height;
     }
