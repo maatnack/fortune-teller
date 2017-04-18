@@ -11,29 +11,27 @@ public class FortuneTeller {
     public String calculate() {
        
      int  numA= magicNumbers.calculateA();
-     String  wordA =translator.totalCalculateA(numA);
+     String  wordA =translator.adjektiv(numA);
     
     int numB= magicNumbers.calculateB();
-    String  wordB =translator.totalCalculateA(numB);
+    String  wordB =translator.verb(numB);
     
     int numC= magicNumbers.calculateC();
-    String  wordC =translator.totalCalculateA(numC);
+    String  wordC =translator. substantiv(numC);
    
     int numD= magicNumbers.calculateD();
-    String  wordD =translator.totalCalculateA(numD);
+    String  wordD =translator.verb(numD);
     
     int numE= magicNumbers.calculateE();
-    String  wordE =translator.totalCalculateA(numE);
+    String  wordE =translator.adjektiv(numE);
         
         
      return"Din framtid är "+wordA+".Du borde sluta " + wordB+". Vi ser att du snart kommer att skaffa "
              + wordC+".Snart kommer du vilja "+wordD+",men då är det viktigt att du är "+ wordE+".";  
-    
-        
+          
     }
     
-    
-    
+  
   
     public static void main(String[] args) {
         new FortuneTeller();

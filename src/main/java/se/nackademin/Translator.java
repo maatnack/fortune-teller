@@ -11,9 +11,8 @@ package se.nackademin;
  */
 public class Translator {
     MagicNumbers magicNumbers;
-   
     
-   public  String totalCalculateA(int numA) {
+   public  String adjektiv(int numA) {
        String strA = null;
        switch (numA) {
             case 0:
@@ -51,7 +50,7 @@ public class Translator {
        }
        return strA;
    }   
-   public  String totalCalculateB(int numB) { 
+   public  String verb(int numB) { 
        String strB = null;
        switch (numB) {
             case 0:
@@ -87,9 +86,10 @@ public class Translator {
             default:
                 break;
         }
+
    return strB;
            }   
-   public  String totalCalculateC(int numC) { 
+   public  String substantiv(int numC) { 
         String strC = null;
         switch (numC) {
             case 0:
@@ -127,81 +127,7 @@ public class Translator {
         }
         return strC;
     } 
-   public  String totalCalculateD(int numD) { 
-           String strD = null;
-      switch (numD) {
-            case 0:
-                strD=" springa";
-                break;
-            case 1:
-                strD=" ljuga";
-                break;
-            case 2:
-                strD=" flyga";
-                break;
-            case 3:
-                strD=" se";
-                break;
-            case 4:
-                strD=" vara";
-                break;
-            case 5:
-                strD=" äta";
-                break;
-            case 6:
-                strD=" mäta";
-                break;
-            case 7:
-                strD=" gå";
-                break;
-            case 8:
-                strD=" röra";
-                break;
-            case 9:
-                strD=" resa";
-                break;
-            default:
-                break;
-        }
-         
-         return strD;}  
-   public  String totalCalculateE(int numE) {
-           String strE = null;
-           switch (numE) {
-             case 0:
-                strE=" stor";
-                break;
-            case 1:
-                strE=" liten";
-                break;
-            case 2:
-                strE="stark";
-                break;
-            case 3:
-                strE=" svag";
-                break;
-            case 4:
-                strE=" mjuk";
-                break;
-            case 5:
-                strE=" hård";
-                break;
-            case 6:
-                strE=" snabb";
-                break;
-            case 7:
-                strE=" vacker";
-                break;
-            case 8:
-                strE=" ljus";
-                break;
-            case 9:
-                strE=" mörk";
-                break;
-            default:
-                break;
-        }
-          return strE;}  
+  
 } 
    
      

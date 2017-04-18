@@ -102,14 +102,12 @@ public class MagicNumbers {
             ef /= 2.0;
 
             ef = Math.round(ef);
-
         }
 
         e = Math.round(ef);
 
         return (int) e;
     } 
-
 
     public void setName(String name) {
         this.name = name;
